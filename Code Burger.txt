@@ -72,3 +72,9 @@ row3 = QHBoxLayout()
 # Show and execute the app
 main_window.show()
 app.exec_()
+
+
+
+
+
+

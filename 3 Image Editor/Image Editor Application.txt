@@ -1,0 +1,11 @@
+Select an image from the list
+Apply filters
+Edit our photos
+Save the edited version
+
+Widgets:
+- pushbutton
+- list widget
+- combo box (drop down box)
+- label
+- widget

@@ -1,0 +1,10 @@
+Pillow Doc
+
+The Python Imaging Library is ideal for image archival and batch processing applications.
+You can use the library to create thumbnails, convert between file formats, print images, etc.
+
+
+There’s a histogram method allowing you to pull some statistics out of an image. 
+This can be used for automatic contrast enhancement, and for global statistical analysis.
+
+https://pillow.readthedocs.io/en/stable/handbook/concepts.html
