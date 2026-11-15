@@ -1,5 +1,4 @@
-# pyqt-learning-codewithjosh
-# PyQt Learning Journey
+# PyQt Learning Journey and Application Development Repo
 
 A collection of Python GUI development exercises and projects based on the **Python App Development: Build Modern GUIs in 7 Hours** tutorial by Code with Josh.
 
@@ -13,6 +12,7 @@ To develop practical skills in building desktop applications using Python and Py
 - GitHub
 
 ## Learning Progress
+Tutorial: Code with Josh – Python App Development: Build Modern GUIs in 7 Hours.
 - [done]  What is PyQt?
 - [done]  The Basics of a Windowed Application
 - [done]  Create a Starter App Window
@@ -20,10 +20,10 @@ To develop practical skills in building desktop applications using Python and Py
 - [done]  Add Widgets to an Application
 - [done] App Functionality with Signals and Slots
 - [done]  Build a Calculator App with Python
-- Styling with CSS in Python
-- Building an Image Editor Application
-- Introduction to Pillow (PIL) in Python
-- Implement Pillow with PyQt and os module
+- [done] Styling with CSS in Python
+- [done] Building an Image Editor Application
+- [done] Introduction to Pillow (PIL) in Python
+- [ongoing] Implement Pillow with PyQt and os module
 - Learn to Use Lambda Functions in Python
 - Build a SQL Expense Tracker
 - Introduction to SQL with Python
@@ -31,7 +31,11 @@ To develop practical skills in building desktop applications using Python and Py
 - Introduction to Data Visualization with Matplotlib
 - Toggle a Dark Mode
 
+Tutorial: ChatGPT, DIY
+- Github Basics
+
 ## Projects
+Tutorial: Code with Josh – Python App Development: Build Modern GUIs in 7 Hours.
 Exercises and mini-projects completed throughout the tutorial.
 - [done] Starter App
 - [done] Calculator
@@ -45,5 +49,4 @@ Exercises and mini-projects completed throughout the tutorial.
 Apply the concepts learned here to develop a desktop application for a Machine Project, integrating machine vision, image processing, and inspection results.
 
 ## Credits
-
 Tutorial: Code with Josh – Python App Development: Build Modern GUIs in 7 Hours.
