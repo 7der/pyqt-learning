@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 
-folder = Path(r"C:\Users\Samsung\Projects\Python UI\pyqt-learning\3-image-editor")
+# folder = Path(r"C:\Users\Samsung\Projects\Python UI\pyqt-learning\3-image-editor")
 
 class Editor(QWidget):
 
@@ -100,7 +100,6 @@ class Editor(QWidget):
         self.image =Image.open(fullname)
         self.original_img = self.image.copy() #saves a copy in memory 
         
-        
     def saveImage(self):
         path = os.path.joi(working_directory, self.save_folder)
         if not(os.path.exists(path) or os.path.isdir(path)):
@@ -116,51 +115,12 @@ class Editor(QWidget):
         image = image.scaled(w,h, Qt.KeepAspectRatio)
         self.picture_box.setPixmap(image)
         self.picture_box.show()
-    
-        
+       
     def displayImage(self):
         if self.list_file.currentRow() >= 0:
             self.filename = self.list_file.currentItem().text()
             main_window.load_image(self.filename)
             main_window.show_image(os.path.join(working_directory, main_window.filename))
-    
-    # def do_color(self):
-    #     self.image = ImageEnhance.Color(self.image).enhance(1.2)
-    #     self.saveImage()
-    #     image_path=os.path.join(work_directory,self.save_folder,self.file)
-    #     self.showImage(image_path)
-
-    # def do_black_white(self):
-    #     self.image = self.image.convert("L")
-    #     self.saveImage()
-    #     image_path=os.path.join(work_directory,self.save_folder,self.file)
-    #     self.showImage(image_path)
-    
-    # def do_mirror(self):
-    #     self.image = self.image.transpose(Image.FLIP_LEFT_RIGHT)
-    #     self.saveImage()
-    #     image_path=os.path.join(work_directory,self.save_folder,self.file)
-    #     self.showImage(image_path)
-        
-    # def do_contrast(self):
-    #     self.image = contrast = ImageEnhance.Contrast(self.image)
-    #     self.image = self.image.enhance(2.5)
-    #     self.saveImage()
-    #     image_path=os.path.join(work_directory,self.save_folder,self.file)
-    #     self.showImage(image_path)
-
-    # def do_blur(self):
-    #     self.image =  self.image.filter(ImageEnhance.BLUR)
-    #     self.saveImage()
-    #     image_path=os.path.join(work_directory,self.save_folder,self.file)
-    #     self.showImage(image_path) 2
-        
-
-    
-    # file_list.currentRowChanged.connect(displayImage)
-    # btn_color.clicked.connect(main.do_color)
-    
-    
     
     # filter files and extensions
     def filter(self,files, extensions):
@@ -170,7 +130,6 @@ class Editor(QWidget):
                 if file.endswith(ext):
                     results.append(file)
         return results
-    
     
     def getWorkDirectory(self):
         global working_directory 
@@ -193,7 +152,42 @@ class Editor(QWidget):
         
     # def btn_folder_clicked(self):
     #     self.getWorkDirectory()
+    
+    # def do_color(self):
+        #     self.image = ImageEnhance.Color(self.image).enhance(1.2)
+        #     self.saveImage()
+        #     image_path=os.path.join(work_directory,self.save_folder,self.file)
+        #     self.showImage(image_path)
+    
+        # def do_black_white(self):
+        #     self.image = self.image.convert("L")
+        #     self.saveImage()
+        #     image_path=os.path.join(work_directory,self.save_folder,self.file)
+        #     self.showImage(image_path)
         
+        # def do_mirror(self):
+        #     self.image = self.image.transpose(Image.FLIP_LEFT_RIGHT)
+        #     self.saveImage()
+        #     image_path=os.path.join(work_directory,self.save_folder,self.file)
+        #     self.showImage(image_path)
+            
+        # def do_contrast(self):
+        #     self.image = contrast = ImageEnhance.Contrast(self.image)
+        #     self.image = self.image.enhance(2.5)
+        #     self.saveImage()
+        #     image_path=os.path.join(work_directory,self.save_folder,self.file)
+        #     self.showImage(image_path)
+    
+        # def do_blur(self):
+        #     self.image =  self.image.filter(ImageEnhance.BLUR)
+        #     self.saveImage()
+        #     image_path=os.path.join(work_directory,self.save_folder,self.file)
+        #     self.showImage(image_path) 2
+            
+    
+        
+        # file_list.currentRowChanged.connect(displayImage)
+        # btn_color.clicked.connect(main.do_color)
     
     
 # Show/Run the App 
@@ -203,9 +197,6 @@ if __name__ == "__main__":
     main_window = Editor()
     main_window.show()
     app.exec_()
-
-
-
 
 #QtCore -tools for aligning widgets
 # #QtWidgets - tools for creating GUI elements

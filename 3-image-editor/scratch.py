@@ -1,28 +1,24 @@
+cube = lambda x:x**3
+result =cube(4)
+print(result)
 
-black_white = picture.convert("L")
-black_white.save(image_path / "gray.png")
+multi_numbers = lambda x,y:x*y
+result = multi_numbers(2,3)
+print(result)
 
-mirror = picture.transpose(Image.FLIP_LEFT_RIGHT)
-mirror.save(image_path / "mirrored.png")
+filter_box_dict = {1:'Original',2:'',3:'',4:'',5:'',6:'',7:''}
 
-blur = picture.filter(ImageFilter.BLUR)
-blur.save(image_path / "blurred.png")
-
-
-#ImageEnhance
-contrast = ImageEnhance.Contrast(picture)
-contrast = contrast.enhance(2.5)
-contrast.save(image_path / "contrast.png")
-
-color = ImageEnhance.Color(picture).enhance(2.5)
-color.save(image_path / "color.png")
-# Make sure extension you save with 
+filter_mapping = {
+    "Left":lambda self.image.image.transpose(Image.ROTATE_90)
+    "Right": lambda self.image.transpose(Image.ROTATE_270)
+    "Mirror":lambda self.image.transpose(Image.FLIP_LEFT_RIGHT)
+    "Sharpness": lambda
+    "B/W": lambda self.image.convert("L")
+    "Color": lambda ImageEnhance.Color(self.image).enhance(1.2)
+    "Contrast": lambda contrast = ImageEnhance.Contrast(self.image)
+    "Blur": lambda self.image.filter(ImageFilter.BLUR)
+}
 
 
 
-    
-def do_black_white(self):
-    
-    
-black_white = picture.convert("L")
-black_white.save(image_path / "gray.png")
+  
