@@ -23,8 +23,8 @@ Tutorial: Code with Josh – Python App Development: Build Modern GUIs in 7 Hour
 - [done] Styling with CSS in Python
 - [done] Building an Image Editor Application
 - [done] Introduction to Pillow (PIL) in Python
-- [ongoing] Implement Pillow with PyQt and os module
-- Learn to Use Lambda Functions in Python
+- [done] Implement Pillow with PyQt and os module
+- [ongoing]Learn to Use Lambda Functions in Python
 - Build a SQL Expense Tracker
 - Introduction to SQL with Python
 - Build an Interest Rate Calculator with Matplotlib
